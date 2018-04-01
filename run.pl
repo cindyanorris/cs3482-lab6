@@ -14,3 +14,6 @@ system "cd Test4; run.pl";
 
 print "Test5 directory tests\n";
 system "cd Test5; run.pl";
+
+print "Test6 directory tests\n";
+system "cd Test6; run.pl";
