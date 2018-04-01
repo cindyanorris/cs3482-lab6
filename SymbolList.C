@@ -11,6 +11,9 @@
 
 /* The methods below are complete. */
 /* These methods are for iterating through the SymbolList. */
+/* They should be used by methods outside of the class. */
+/* Methods inside of the class have direct access to the */
+/* SymbolList data members to they don't need the iterator. */
 
 /* SymbolList::begin
  * Return an Iterator that contains a pointer to the first
@@ -40,7 +43,7 @@ Iterator::Iterator(SymbolList::symbolEntry * first)
 }
 
 /* Iterator::operator*
- * Returnss the Symbol that is contained within the symbolEntry
+ * Returns the Symbol that is contained within the symbolEntry
  * that is pointed to by current.
  */
 Symbol Iterator::operator*()
